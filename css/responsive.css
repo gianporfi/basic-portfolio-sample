@@ -1,0 +1,234 @@
+/*--------------------------------------------------------------
+# Responsive Styles
+--------------------------------------------------------------*/
+
+/* Large Devices (Desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .page-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Medium Devices (Tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .hero-content {
+        flex-direction: column;
+    }
+    
+    .hero-text, .hero-image {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-text p {
+        margin: 0 auto var(--spacing-lg);
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .hero-image {
+        margin-top: var(--spacing-xxl);
+    }
+    
+    .blob-container {
+        margin: 0 auto;
+        width: 350px;
+        height: 350px;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .about-image {
+        order: 1;
+    }
+    
+    .about-text {
+        order: 2;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-image {
+        display: none;
+    }
+}
+
+/* Small Devices (Landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .section-header {
+        margin-bottom: var(--spacing-xl);
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: var(--bg-light);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 80px var(--spacing-lg) var(--spacing-lg);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        transition: var(--transition-normal);
+        z-index: var(--z-modal);
+    }
+    
+    .nav-menu.show {
+        right: 0;
+    }
+    
+    .nav-item {
+        margin: 0 0 var(--spacing-md);
+        width: 100%;
+    }
+    
+    .nav-link {
+        display: block;
+        width: 100%;
+        padding: var(--spacing-xs) 0;
+    }
+    
+    .hero-section {
+        padding: 150px 0 100px;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+    
+    .blob-container {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .skills-cards, .contact-info-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .personal-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonials-slider {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .contact-list li {
+        justify-content: center;
+    }
+    
+    .footer-social .social-icons {
+        justify-content: center;
+    }
+    
+    .page-header {
+        padding: 150px 0 80px;
+    }
+    
+    .page-title {
+        font-size: 2.2rem;
+    }
+}
+
+/* Extra Small Devices (Portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .blob-container {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+    }
+    
+    .portfolio-filter {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-form {
+        padding: var(--spacing-lg);
+    }
+}
+
+/* Show Cursor only on Desktop */
+@media (hover: hover) {
+    .cursor, .cursor-dot {
+        opacity: 1;
+    }
+}
+
+/* Hide Cursor on Mobile/Touch Devices */
+@media (hover: none) {
+    .cursor, .cursor-dot {
+        display: none;
+    }
+}

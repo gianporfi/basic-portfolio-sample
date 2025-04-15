@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contattami per collaborazioni e progetti web, app e design">
+    <meta name="keywords" content="contatti, email, form, collaborazione, web design">
+    <meta name="author" content="Il Tuo Nome">
+    
+    <title>Contatti | Neomorphic Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor personalizzato -->
+    <div class="cursor">
+        <div class="cursor-dot"></div>
+    </div>
+    
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <svg viewBox="0 0 100 100">
+                <path d="M 50,50 m -40,0 a 40,40 0 1,0 80,0 a 40,40 0 1,0 -80,0" fill="none" stroke="#3d76e3" stroke-width="4"></path>
+                <path d="M 50,50 m -40,0 a 40,40 0 1,0 80,0 a 40,40 0 1,0 -80,0" fill="none" stroke="#fff" stroke-width="4" class="loader-progress"></path>
+            </svg>
+            <span class="loading-text">Caricamento</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Neo<span class="accent">morphic</span></span>
+                </a>
+                
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">Chi Sono</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">Con<span class="accent">tatti</span></h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Contatti</span>
+                </div>
+            </div>
+        </div>
+        <div class="shape-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-info-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="contact-title">Indirizzo</h3>
+                    <p class="contact-text">Via Roma 123, 20100 Milano, Italia</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="contact-title">Email</h3>
+                    <p class="contact-text">info@neomorphic.it</p>
+                    <p class="contact-text">support@neomorphic.it</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="contact-title">Telefono</h3>
+                    <p class="contact-text">+39 123 456 7890</p>
+                    <p class="contact-text">+39 098 765 4321</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3 class="contact-title">Social</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Parlami del tuo progetto</span>
+                <h2 class="section-title">Inviami un <span class="accent">Messaggio</span></h2>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-image">
+                    <img src="assets/images/example-5.jpg" alt="Contact Illustration">
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Indirizzo Email</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" placeholder="La tua email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Oggetto</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-pencil-alt"></i>
+                                <input type="text" id="subject" name="subject" placeholder="Oggetto del messaggio" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Messaggio</label>
+                            <div class="input-wrapper textarea-wrapper">
+                                <i class="fas fa-comment-alt"></i>
+                                <textarea id="message" name="message" placeholder="Scrivi il tuo messaggio qui..." required></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">Accetto la <a href="#">Privacy Policy</a> e i <a href="#">Termini di Servizio</a></label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Invia Messaggio</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container">
+                <!-- In un progetto reale, inseriresti qui un iframe di Google Maps -->
+                <div class="map-placeholder">
+                    <img src="assets/images/example-6.jpg" alt="Location Map">
+                    <div class="map-pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">Neo<span class="accent">morphic</span></span>
+                    </a>
+                    <p class="footer-description">Portfolio personale di design e sviluppo web creativo.</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <h3 class="footer-title">Link Rapidi</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Chi Sono</a></li>
+                        <li><a href="contact.html">Contatti</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contattami</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-envelope"></i> info@neomorphic.it</li>
+                        <li><i class="fas fa-phone"></i> +39 123 456 7890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Milano, Italia</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3 class="footer-title">Social</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Neomorphic. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Files -->
+    <script src="js/main.js"></script>
+</body>
+</html>

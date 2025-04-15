@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio professionale con servizi di sviluppo web e design creativo">
+    <meta name="keywords" content="portfolio, web design, sviluppo web, creativo, design">
+    <meta name="author" content="Il Tuo Nome">
+    
+    <title>Neomorphic | Portfolio Creativo</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor personalizzato -->
+    <div class="cursor">
+        <div class="cursor-dot"></div>
+    </div>
+    
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <svg viewBox="0 0 100 100">
+                <path d="M 50,50 m -40,0 a 40,40 0 1,0 80,0 a 40,40 0 1,0 -80,0" fill="none" stroke="#3d76e3" stroke-width="4"></path>
+                <path d="M 50,50 m -40,0 a 40,40 0 1,0 80,0 a 40,40 0 1,0 -80,0" fill="none" stroke="#fff" stroke-width="4" class="loader-progress"></path>
+            </svg>
+            <span class="loading-text">Caricamento</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Neo<span class="accent">morphic</span></span>
+                </a>
+                
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">Chi Sono</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Design <span class="accent">Creativo</span>, <br>Soluzioni <span class="accent">Innovative</span></h1>
+                    <p>Sviluppo siti web & applicazioni con un tocco di creatività e funzionalità all'avanguardia.</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">Esplora Progetti</a>
+                        <a href="contact.html" class="btn btn-secondary">Contattami</a>
+                    </div>
+                    
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="blob-container">
+                        <div class="blob"></div>
+                        <img src="assets/images/example-7.jpg" alt="Hero Image" class="main-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span class="mouse">
+                <span class="wheel"></span>
+            </span>
+            <span class="scroll-text">Scroll</span>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Il Mio Lavoro</span>
+                <h2 class="section-title">Progetti <span class="accent">Selezionati</span></h2>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Tutti</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Progetto 1 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-card">
+                        <div class="portfolio-thumbnail">
+                            <img src="assets/images/example-1.jpg" alt="E-commerce Website">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">E-commerce Moderno</h3>
+                            <span class="portfolio-category">Web Design</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Progetto 2 -->
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-card">
+                        <div class="portfolio-thumbnail">
+                            <img src="assets/images/example-2.jpg" alt="Mobile App">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">App Fitness</h3>
+                            <span class="portfolio-category">App Design</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Progetto 3 -->
+                <div class="portfolio-item" data-category="ui">
+                    <div class="portfolio-card">
+                        <div class="portfolio-thumbnail">
+                            <img src="assets/images/example-3.jpg" alt="UI Design">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Dashboard Analytics</h3>
+                            <span class="portfolio-category">UI/UX Design</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Progetto 4 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-card">
+                        <div class="portfolio-thumbnail">
+                            <img src="assets/images/example-4.jpg" alt="Restaurant Website">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Sito Ristorante</h3>
+                            <span class="portfolio-category">Web Design</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Progetto 5 -->
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-card">
+                        <div class="portfolio-thumbnail">
+                            <img src="assets/images/example-5.jpg" alt="Travel App">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">App Viaggi</h3>
+                            <span class="portfolio-category">App Design</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Progetto 6 -->
+                <div class="portfolio-item" data-category="ui">
+                    <div class="portfolio-card">
+                        <div class="portfolio-thumbnail">
+                            <img src="assets/images/example-6.jpg" alt="Banking UI">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Banking UI</h3>
+                            <span class="portfolio-category">UI/UX Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Competenze</span>
+                <h2 class="section-title">Le Mie <span class="accent">Expertise</span></h2>
+            </div>
+            
+            <div class="skills-content">
+                <div class="skills-text">
+                    <p>Appassionato di sviluppo web e design creativo, lavoro per realizzare progetti all'avanguardia con un equilibrio tra estetica e funzionalità. Mi specializzo in:</p>
+                </div>
+                
+                <div class="skills-cards">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="skill-title">Web Development</h3>
+                        <p class="skill-description">Creo siti web responsive e applicazioni web utilizzando HTML, CSS e JavaScript.</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="skill-title">App Development</h3>
+                        <p class="skill-description">Sviluppo applicazioni mobili cross-platform con Flutter e React Native.</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="skill-title">UI/UX Design</h3>
+                        <p class="skill-description">Creo interfacce intuitive e accattivanti con focus sull'esperienza utente.</p>
+                    </div>
+                </div>
+                
+                <div class="skill-progress-bars">
+                    <div class="skill-progress">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML/CSS</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" data-width="95"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-progress">
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" data-width="85"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-progress">
+                        <div class="skill-info">
+                            <span class="skill-name">Flutter</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" data-width="80"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-progress">
+                        <div class="skill-info">
+                            <span class="skill-name">UI/UX Design</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" data-width="90"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">Neo<span class="accent">morphic</span></span>
+                    </a>
+                    <p class="footer-description">Portfolio personale di design e sviluppo web creativo.</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <h3 class="footer-title">Link Rapidi</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Chi Sono</a></li>
+                        <li><a href="contact.html">Contatti</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contattami</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-envelope"></i> info@neomorphic.it</li>
+                        <li><i class="fas fa-phone"></i> +39 123 456 7890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Milano, Italia</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3 class="footer-title">Social</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Neomorphic. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Files -->
+    <script src="js/main.js"></script>
+</body>
+</html>

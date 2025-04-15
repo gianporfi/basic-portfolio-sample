@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scopri chi sono e la mia esperienza nel web design e sviluppo creativo">
+    <meta name="keywords" content="about, chi sono, web designer, sviluppatore, creativo">
+    <meta name="author" content="Il Tuo Nome">
+    
+    <title>Chi Sono | Neomorphic Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor personalizzato -->
+    <div class="cursor">
+        <div class="cursor-dot"></div>
+    </div>
+    
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <svg viewBox="0 0 100 100">
+                <path d="M 50,50 m -40,0 a 40,40 0 1,0 80,0 a 40,40 0 1,0 -80,0" fill="none" stroke="#3d76e3" stroke-width="4"></path>
+                <path d="M 50,50 m -40,0 a 40,40 0 1,0 80,0 a 40,40 0 1,0 -80,0" fill="none" stroke="#fff" stroke-width="4" class="loader-progress"></path>
+            </svg>
+            <span class="loading-text">Caricamento</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Neo<span class="accent">morphic</span></span>
+                </a>
+                
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link active">Chi Sono</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">Chi <span class="accent">Sono</span></h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Chi Sono</span>
+                </div>
+            </div>
+        </div>
+        <div class="shape-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-image-container">
+                        <img src="assets/images/example-1.jpg" alt="Profile Image">
+                        <div class="experience-badge">
+                            <span class="number">5</span>
+                            <span class="text">Anni di<br>Esperienza</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <span class="section-subtitle">La Mia Storia</span>
+                    <h2 class="section-title">Creativo <span class="accent">Appassionato</span> di Tecnologia</h2>
+                    
+                    <p class="about-description">
+                        Ciao, sono <span class="accent">Marco Rossi</span>, sviluppatore web e designer con base a Milano. Negli ultimi 5 anni, ho avuto il privilegio di lavorare con diverse aziende e startup, aiutandole a creare la loro presenza online attraverso siti web accattivanti e applicazioni user-friendly.
+                    </p>
+                    
+                    <p class="about-description">
+                        La mia passione è trasformare idee complesse in interfacce semplici e intuitive. Mi piace trovare il perfetto equilibrio tra estetica e funzionalità, creando prodotti digitali che non solo sembrano belli, ma che funzionano anche perfettamente.
+                    </p>
+                    
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-title">Nome:</span>
+                            <span class="info-value">Marco Rossi</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Email:</span>
+                            <span class="info-value">info@neomorphic.it</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Telefono:</span>
+                            <span class="info-value">+39 123 456 7890</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Località:</span>
+                            <span class="info-value">Milano, Italia</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Freelance:</span>
+                            <span class="info-value available">Disponibile</span>
+                        </div>
+                    </div>
+                    
+                    <a href="assets/cv.pdf" class="btn btn-primary" download>Scarica CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Il Mio Percorso</span>
+                <h2 class="section-title">Formazione & <span class="accent">Esperienza</span></h2>
+            </div>
+            
+            <div class="timeline">
+                <!-- Esperienza -->
+                <div class="timeline-block">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Esperienza</h3>
+                    </div>
+                    
+                    <div class="timeline-content">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">
+                                <span>2023 - Presente</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h4>Senior Web Developer</h4>
+                                <p class="timeline-company">Digitech Solutions</p>
+                                <p class="timeline-description">
+                                    Sviluppo di siti web e applicazioni web per clienti enterprise, implementazione di soluzioni e-commerce personalizzate e ottimizzazione delle performance.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">
+                                <span>2020 - 2023</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h4>Frontend Developer</h4>
+                                <p class="timeline-company">Creative Labs</p>
+                                <p class="timeline-description">
+                                    Responsabile dello sviluppo frontend di vari progetti web, collaborazione con team di design per implementare interfacce responsive e intuitive.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">
+                                <span>2018 - 2020</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h4>UI/UX Designer</h4>
+                                <p class="timeline-company">Startup Hub</p>
+                                <p class="timeline-description">
+                                    Progettazione di interfacce utente per applicazioni web e mobile, creazione di wireframe e prototipi interattivi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formazione -->
+                <div class="timeline-block">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Formazione</h3>
+                    </div>
+                    
+                    <div class="timeline-content">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">
+                                <span>2015 - 2018</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h4>Laurea in Informatica</h4>
+                                <p class="timeline-company">Università di Milano</p>
+                                <p class="timeline-description">
+                                    Specializzazione in sviluppo web e design dell'interfaccia utente. Tesi su "Tecniche moderne di sviluppo frontend".
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">
+                                <span>2014 - 2015</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h4>Certificazione UI/UX Design</h4>
+                                <p class="timeline-company">Design Academy</p>
+                                <p class="timeline-description">
+                                    Corso intensivo di design dell'interfaccia utente e dell'esperienza utente, con focus su tecniche di prototyping e user research.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Feedback</span>
+                <h2 class="section-title">Cosa Dicono i <span class="accent">Clienti</span></h2>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Marco ha completamente trasformato la nostra presenza online. Il nuovo sito web è incredibilmente intuitivo e ha ricevuto feedback molto positivi dai nostri clienti. Professionale e puntuale, consigliato!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="assets/images/example-2.jpg" alt="Client">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Laura Bianchi</h4>
+                                <p class="author-position">CEO, Fashion Brand</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Ho avuto il piacere di lavorare con Marco su più progetti. La sua capacità di tradurre requisiti complessi in soluzioni semplici ed eleganti è impressionante. Un vero professionista nel suo campo."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="assets/images/example-3.jpg" alt="Client">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Alessandro Verdi</h4>
+                                <p class="author-position">CTO, Tech Startup</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Ho contattato Marco per sviluppare il sito web del mio ristorante e sono rimasto estremamente soddisfatto. Il design è moderno, responsive e ha aiutato ad aumentare le prenotazioni online. Grazie mille!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="assets/images/example-4.jpg" alt="Client">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Giulia Ferrari</h4>
+                                <p class="author-position">Proprietaria, Ristorante</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">Neo<span class="accent">morphic</span></span>
+                    </a>
+                    <p class="footer-description">Portfolio personale di design e sviluppo web creativo.</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <h3 class="footer-title">Link Rapidi</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Chi Sono</a></li>
+                        <li><a href="contact.html">Contatti</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contattami</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-envelope"></i> info@neomorphic.it</li>
+                        <li><i class="fas fa-phone"></i> +39 123 456 7890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Milano, Italia</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3 class="footer-title">Social</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Neomorphic. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Files -->
+    <script src="js/main.js"></script>
+</body>
+</html>
